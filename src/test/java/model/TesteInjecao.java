@@ -24,7 +24,7 @@ public class TesteInjecao implements CommandLineRunner {
         pedido.addItem(item);
 
         //salvar pedido
-        Order salvar = orderService.saveOrder(pedido);
+        Order salvar = orderService.createOrder(pedido);
 
         System.out.println("Pedido salvo com ID: " + salvar.getId());
         
